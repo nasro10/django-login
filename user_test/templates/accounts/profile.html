@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block head%}
+    <title>Profile</title>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+    <p> UserName:
+        {{ user }}</p>
+        <p> First name : {{ user.first_name }}</p>
+        <p>Last name : {{ user.last_name }}</p>
+     <p> Email:  {{ user.email }}
+
+    </p>
+    <a class="btn btn-primary" href="/accounts/profile/edit" role="button">Modifier mes informations</a>
+    </div>
+{% endblock %}
